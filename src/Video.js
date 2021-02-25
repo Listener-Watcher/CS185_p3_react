@@ -14,7 +14,7 @@ class Videodata extends React.Component {
       var modal = document.getElementById("myv");
       var modalV = document.getElementById("v01");
       modal.style.display = "flex";
-      modalV.querySelector("source").src="./video/"+{i}+'.mp4';
+      modalV.querySelector("source").src="./video/"+i+'.mp4';
       modalV.load();
   window.onclick = function(event) {
       if (event.target === modal) {
