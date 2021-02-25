@@ -1,0 +1,253 @@
+.nav
+{    
+    background-color:black;
+    overflow:hidden;
+    width:100vm;
+    margin-bottom:0px;
+}
+.navbar_active
+{
+    color:white;
+    background-color:wheat;
+    float:left;
+    text-decoration:none;
+    font-size:17px;
+    text-align:center;
+    padding:15px;
+}
+.navbar
+{
+    color:white;
+    background-color:black;
+    float:left;
+    text-decoration:none;
+    font-size:17px;
+    text-align:center;
+    padding:15px;
+}
+.navbar:hover
+{
+    color:white;
+    background-color:wheat;
+    float:left;
+    text-decoration:none;
+    font-size:17px;
+    text-align:center;
+    padding:15px;
+}
+
+a:hover{
+    background-color:wheat;
+}
+#active
+{
+    background-color:wheat;
+}
+h1
+{
+    color:white;
+    padding:15px;
+}
+#textbox
+{
+    width: 100%;
+    margin: 10px auto;
+}
+.alignleft{
+    float:left;
+    width:35%;
+}
+.alignright
+{
+    float:right;
+    width:60%;
+}
+.intro_image
+{
+    float: left;
+    margin: 0 1.5%;
+    width: 63%;
+}
+
+
+a
+{
+    color:white;
+    float:left;
+    text-decoration:none;
+    font-size:17px;
+    text-align:center;
+    padding:15px;
+}
+#table_a
+{
+    color:purple;
+    text-decoration:underline;
+    font-size:17px;
+    text-align:left;
+    padding:2px;
+}
+p
+{
+    font-size:17px;
+    padding:2px;
+}
+label
+{
+    margin-left:10px;
+
+    font-family:'Times New Roman', Times, serif;
+    font-weight:540;
+    font-size:medium;
+}
+#fname
+{
+    margin-left:10px;
+}
+#lname
+{
+    margin-left:10px;
+    margin-bottom:20px;
+}
+#avenger
+{
+    margin-left:20px;    
+}
+#darkknight
+{
+    margin-left:20px;    
+}
+#tenet
+{
+    margin-left:20px;
+    margin-bottom:20px;
+}
+#done
+{
+    margin-left:10px;   
+}
+main
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:0px;
+
+}
+figure{
+    display:flex;
+    gap:0px;
+}
+img{
+    display:block;
+    object-fit:cover;
+    max-width: 100%;
+
+}
+.video-container
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap:10px;
+}
+.video_item{
+    display:flex;
+}
+video{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+table,th,td
+{
+    border:1px solid black;
+    border-collapse:collapse;
+}
+table
+{
+    width:100%;
+}
+th
+{
+    text-align:left;
+    padding:2px;
+}
+
+
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    align-self: center;
+    width: 80%;
+    max-width: 700px;
+    height:80%;
+    max-height:500px;
+  }
+  /* Add Animation - Zoom in the Modal */
+.modal-content{
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  /* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;}
+    }
+
+    #myBtn {
+        display: block; /* Hidden by default */
+        position: fixed; /* Fixed/sticky position */
+        bottom: 20px; /* Place the button at the bottom of the page */
+        right: 30px; /* Place the button 30px from the right */
+        z-index: 99; /* Make sure it does not overlap */
+        border: none; /* Remove borders */
+        outline: none; /* Remove outline */
+        background-color:black; /* Set a background color */
+        color: white; /* Text color */
+        cursor: pointer; /* Add a mouse pointer on hover */
+        padding: 15px; /* Some padding */
+        border-radius: 10px; /* Rounded corners */
+        font-size: 18px; /* Increase font size */
+      }
+      
+      #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+      }
